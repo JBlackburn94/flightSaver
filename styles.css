@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    background-color: rgb(17, 19, 40);
+    scroll-behavior: smooth;
+}
+
+i {
+  color: rgb(255, 175, 27);
+}
+
+/* Nav Section */
+.nav-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  position: fixed;
+  margin-left: 2rem;
+}
+
+.nav-child {
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav-child:hover {
+  color: white;
+  background-color: black;
+  padding: 10px;
+}
+
+/* Hero section */
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-flow: row wrap;
+}
+
+.hero-logo {
+  font-size: 20rem;
+  color: rgb(255, 175, 27);
+}
+
+.hero-text {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.hero-title {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 2rem;
+}
+
+.hero-title h1 {
+  background-color: rgb(255, 175, 27);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.hero-title h1:hover {
+  background-color: white;
+  color: rgb(255, 175, 27);
+  rotate: 5deg;
+  transition: 1s;
+}
+
+/* Itinerary section */
+
+
+@media screen and (max-width: 400px) {
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    flex-flow: row wrap;
+  }
+
+  .hero-logo {
+    font-size: 10rem;
+  }
+
+  .hero-text {
+    font-size: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
