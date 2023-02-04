@@ -5,12 +5,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto";
-    background-color: rgb(17, 19, 40);
     scroll-behavior: smooth;
 }
 
 i {
   color: rgb(255, 175, 27);
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }
 
 /* Nav Section */
@@ -20,6 +22,10 @@ i {
   justify-content: start;
   align-items: center;
   position: fixed;
+  width: 100%;
+}
+
+.nav-parent i {
   margin-left: 2rem;
 }
 
@@ -28,6 +34,7 @@ i {
   color: white;
   margin: 10px;
   padding: 10px;
+  background-color: transparent;
 }
 
 .nav-child:hover {
@@ -45,6 +52,18 @@ i {
   flex-flow: row wrap;
 }
 
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
 .hero-logo {
   font-size: 20rem;
   color: rgb(255, 175, 27);
@@ -56,30 +75,80 @@ i {
   color: white;
   border-radius: 10px;
   margin-top: 10px;
-}
-
-.hero-title {
-  text-decoration: none;
   text-transform: uppercase;
-  color: black;
-  font-size: 2rem;
-}
-
-.hero-title h1 {
-  background-color: rgb(255, 175, 27);
+  background-color: rgb(17, 19, 40);
   padding: 10px;
-  border-radius: 10px;
 }
 
-.hero-title h1:hover {
-  background-color: white;
-  color: rgb(255, 175, 27);
-  rotate: 5deg;
-  transition: 1s;
+.child {
+  background-color: transparent;
 }
+
 
 /* Itinerary section */
+.itinerary-heading {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 10rem;
+  margin-bottom: -10rem;
+}
 
+.itinerary-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.itinerary-container {
+  background-color: rgb(255, 175, 27);
+  padding: 100px;
+  border-radius: 10px;
+  height: auto;
+}
+
+#inputField {
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+  background-color: white;
+  color: rgb(17, 19, 40);
+}
+
+#toDo  {
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px;
+  background-color: rgb(17, 19, 40);
+  color: white;
+  cursor: pointer;
+}
+
+#container p {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.complete-button {
+  background-color: rgb(17, 19, 40);
+  border-style: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.remove-button {
+  background-color: rgb(17, 19, 40);
+  border-style: none;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 400px) {
   .hero-container {

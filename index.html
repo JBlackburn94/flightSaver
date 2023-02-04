@@ -31,20 +31,27 @@
           <div class="child">
             <i class="fa-solid fa-paper-plane hero-logo"></i>
             <h4 class="hero-text">Flight Saver</h4>
-          </div>
-          <div class="hero-child">
-            <a class="hero-title" href="#"><h1>Get Started Now!</h1></a>
+            <video
+              id="background-video"
+              autoplay
+              loop
+              muted
+              poster="https://assets.codepen.io/6093409/river.jpg"
+            >
+              <source src="video/Pexels Videos 2252797.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </section>
 
       <section id="itinerary">
+        <h1 class="itinerary-heading">Itinerary</h1>
         <div class="itinerary-section">
-          <div id="new-task">
-            <input id="push" type="text" />
-            <button></button>
+          <div class="itinerary-container">
+            <input type="text" id="inputField" />
+            <button id="toDo">Add</button>
+            <div class="to-dos" id="container"></div>
           </div>
-          <div id="tasks"></div>
         </div>
       </section>
     </main>
