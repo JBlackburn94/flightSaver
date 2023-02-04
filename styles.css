@@ -80,6 +80,13 @@ i {
   padding: 10px;
 }
 
+.sub-heading {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
 .child {
   background-color: transparent;
 }
@@ -91,8 +98,7 @@ i {
   color: white;
   text-transform: uppercase;
   font-size: 2rem;
-  margin-top: 10rem;
-  margin-bottom: -10rem;
+  margin-bottom: -100px;
 }
 
 .itinerary-section {
@@ -149,7 +155,6 @@ i {
   margin-right: 1rem;
   cursor: pointer;
 }
-
 @media screen and (max-width: 400px) {
   .hero-container {
     display: flex;
