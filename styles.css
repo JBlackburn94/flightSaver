@@ -166,6 +166,7 @@ i {
 
   .hero-logo {
     font-size: 10rem;
+    margin-left: 2.5rem;
   }
 
   .hero-text {
@@ -175,6 +176,11 @@ i {
   .hero-title {
     font-size: 1rem;
   }
+
+  .sub-heading {
+    font-size: 0.5rem;
+  }
+
 }
 
 
